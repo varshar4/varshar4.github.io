@@ -13,25 +13,28 @@
     rel="stylesheet"
   />
 
-  <!-- Your CSS file -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav class="nav">
-    <a class="logo" href="index.html">Varsha Rathore</a>
-    <div class="subpage-nav-links">
-      <a href="index.html">Home</a>
-      <a href="certifications.html">Certifications</a>
-      <a href="projects.html">Projects</a>
-      <a href="coursework.html">Current Coursework</a>
-      <a href="background.html" class="active">Background</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Varsha Rathore</a>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="projects.html">Projects</a>
+        <a href="coursework.html">Current Coursework</a>
+        <a href="background.html">Background</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </nav>
 
   <section class="hero fade-in">
-    <div class="container">
+    <div class="container hero-content">
       <h1>Analytics, Product Thinking, and Data Storytelling</h1>
       <p>
         I build analytics-driven solutions that connect data, user behavior, and business impact.
@@ -60,21 +63,28 @@
     <div class="container">
       <h2>Featured Projects</h2>
 
-      <div class="project-card">
+      <div class="featured-project">
+        <div class="project-card">
           <h3>GT CSE 6040x</h3>
           <p>
-This project investigates how different playing styles—such as aggression, serve dominance, and pressure handling—impact match outcomes in professional tennis. Using detailed match charting data from 2021–2026, we focus on singles, completed, hard-court matches, and enforce strict data quality filters.          </p>
+            This project investigates how different playing styles—such as aggression, serve dominance,
+            and pressure handling—impact match outcomes in professional tennis. Using detailed match
+            charting data from 2021–2026, the analysis focuses on singles, completed hard-court matches
+            while applying strict data quality filters.
+          </p>
           <div class="tools">Python • Machine Learning • Statistics</div>
           <a href="https://github.com/varshar4/Playing-Style-Tradeoffs-in-Tennis/blob/main/Playing%20Style%20Tradeoffs%20in%20Tennis%20-%20Rathore%2C%20Varsha%20-%202026.ipynb" target="_blank" rel="noopener noreferrer">
             View Repository →
           </a>
         </div>
+      </div>
 
       <div class="project-grid">
         <div class="project-card">
           <h3>AI Dojo</h3>
           <p>
-            N/A
+            A hands-on project exploring applied generative AI concepts in a healthcare-oriented context,
+            with emphasis on experimentation, prompt design, and practical technical implementation.
           </p>
           <div class="tools">Python • Databricks • Generative AI for Healthcare</div>
           <a href="https://github.com/varshar4/AI-Dojo" target="_blank" rel="noopener noreferrer">
@@ -85,7 +95,9 @@ This project investigates how different playing styles—such as aggression, ser
         <div class="project-card">
           <h3>C2E Operational Excellence Analyst</h3>
           <p>
-            N/A
+            A business analytics and operational reporting project focused on surfacing insights,
+            improving visibility, and supporting decision-making through data pipelines, automation,
+            and dashboard development.
           </p>
           <div class="tools">SQL • Data Analysis • Power BI • Data Engineering • Power Automate</div>
           <a href="https://github.com/varshar4/C2E-OE-Analyst" target="_blank" rel="noopener noreferrer">
@@ -96,7 +108,9 @@ This project investigates how different playing styles—such as aggression, ser
         <div class="project-card">
           <h3>TDP R2 - Data Engineer</h3>
           <p>
-            N/A.
+            A portfolio project showcasing data engineering and business intelligence work, including
+            analytics workflows, reporting, and insight generation through structured datasets and
+            visualization tools.
           </p>
           <div class="tools">Python • Power BI • Business Intelligence</div>
           <a href="https://github.com/varshar4/TDP-R2" target="_blank" rel="noopener noreferrer">
@@ -126,3 +140,4 @@ This project investigates how different playing styles—such as aggression, ser
 
 </body>
 </html>
+``
