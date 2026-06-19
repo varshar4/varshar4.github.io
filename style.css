@@ -244,3 +244,48 @@ footer {
     justify-content: center;
   }
 }
+
+.top-nav {
+  display:: center;  display: flex;
+  padding: 28px 48px;
+  border-bottom: 2px solid #1f1f1f;
+  background: transparent;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  color: #1e3a7a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.top-links a {
+  color: #1e3a7a;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.top-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .top-links {
+    gap: 18px;
+  }
+}
+  justify-content: space-between;
+
