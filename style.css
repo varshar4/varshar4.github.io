@@ -59,38 +59,50 @@ a:hover {
   color: #2f4f9f;
 }
 
+/* =========================
+   NAVBAR — styled like subpages.css
+   but using homepage colors
+========================= */
+
 nav {
   position: sticky;
   top: 0;
-  background: rgba(253, 241, 245, 0.96);
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid #000000;
   z-index: 1000;
+  background: #fdf1f5;
+  border-bottom: 2px solid #000000;
 }
 
 .nav-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
+  padding: 20px 48px;
 }
 
 .nav-title {
-  font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #132a63;
+  text-decoration: none;
 }
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  gap: 28px;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   color: #132a63;
+  text-decoration: none;
   font-weight: 600;
   position: relative;
   transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #2f4f9f;
 }
 
 .nav-links a::after {
@@ -101,12 +113,17 @@ nav {
   width: 0;
   height: 2px;
   background: #132a63;
-  transition: width 0.3s ease;
+  transition: width 0.25s ease;
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
   width: 100%;
 }
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
   padding: 110px 0 90px;
@@ -156,6 +173,10 @@ nav {
   box-shadow: 0 10px 24px rgba(19, 42, 99, 0.12);
 }
 
+/* =========================
+   SECTIONS
+========================= */
+
 .section-light {
   background: #fff7fa;
 }
@@ -163,6 +184,10 @@ nav {
 .section-muted {
   background: #ffeef4;
 }
+
+/* =========================
+   PROJECT CARDS
+========================= */
 
 .project-grid {
   display: grid;
@@ -196,6 +221,10 @@ nav {
   margin-bottom: 16px;
 }
 
+/* =========================
+   CONTACT / FOOTER
+========================= */
+
 .contact-links a {
   font-weight: 600;
   margin-right: 18px;
@@ -209,6 +238,10 @@ footer {
   font-size: 0.95rem;
   background: #fbe4ec;
 }
+
+/* =========================
+   ANIMATIONS
+========================= */
 
 .fade-in {
   animation: fadeInUp 0.8s ease both;
@@ -225,6 +258,10 @@ footer {
   }
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2.3rem;
@@ -236,56 +273,13 @@ footer {
 
   .nav-inner {
     flex-direction: column;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 24px;
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 16px;
+    justify-content: flex-start;
   }
 }
-
-.top-nav {
-  display:: center;  display: flex;
-  padding: 28px 48px;
-  border-bottom: 2px solid #1f1f1f;
-  background: transparent;
-}
-
-.site-name {
-  font-size: 1.1rem;
-  color: #1e3a7a;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.top-links {
-  display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
-}
-
-.top-links a {
-  color: #1e3a7a;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.top-links a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 900px) {
-  .top-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-  }
-
-  .top-links {
-    gap: 18px;
-  }
-}
-  justify-content: space-between;
-
