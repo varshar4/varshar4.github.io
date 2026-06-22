@@ -1,19 +1,49 @@
-<section class="subpage-card form-card">
-  <form class="contact-form" action="https://formspree.io/f/mwvjgqlo" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Varsha Rathore</title>
+  <link rel="stylesheet" href="subpages.css" />
+</head>
+<body>
+  <nav class="subpage-navbar">
+    <a class="subpage-logo" href="index.html">Varsha Rathore</a>
+    <div class="subpage-nav-links">
+      <a href="index.html">Home</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="projects.html">Projects</a>
+      <a href="coursework.html">Current Coursework</a>
+      <a href="background.html">Background</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required />
+  <main class="subpage-container">
+    <section class="subpage-header">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out for opportunities, collaboration, or questions.</p>
+    </section>
 
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" required />
+    <section class="subpage-card form-card">
+      <form class="contact-form" action="https://formspree.io/f/mwvjgqlo" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-    <input type="hidden" name="_next" value="https://varshar4.github.io/thank-you.html" />
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
 
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <input type="hidden" name="_next" value="https://varshar4.github.io/thank-you.html" />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
